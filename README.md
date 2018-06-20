@@ -1,6 +1,6 @@
 # eventserver-sdk
 
-[![Version](https://img.shields.io/badge/version-v1.0.0-brightgreen.svg?style=ffor-the-badge)][current_version]
+[![Version](https://img.shields.io/badge/version-v1.1.0-brightgreen.svg?style=ffor-the-badge)][current_version]
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=ffor-the-badge)](LICENSE.md)
 
 Developer SDK for interacting with the Eventserver API
