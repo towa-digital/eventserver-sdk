@@ -46,4 +46,4 @@ Towa is a digital agency based in Bregenz (Austria), Vienna (Austria) & St. Gall
 
 The MIT License (MIT). Please read the (LICENSE.md)[License File] for more information.
 
-[current_version]: https://github.com/towa-digital/eventserver-sdk/tree/v1.0.0
+[current_version]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.0.0

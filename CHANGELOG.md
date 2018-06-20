@@ -13,5 +13,5 @@
 
 + gitignore
 
-[v1.0.0]: https://github.com/towa-digital/eventserver-sdk/tree/v1.0.0
+[v1.0.0]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.0.0
 [unreleased]: https://github.com/towa-digital/eventserver-sdk/tree/develop
