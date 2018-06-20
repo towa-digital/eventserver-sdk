@@ -9,11 +9,32 @@ Developer SDK for interacting with the Eventserver API
 
 ### Events
 
-Basic Request with no options:
+#### Basic Request with no options:
 
 ```php
 $eventserver = new Eventserver($token);
 $response = $eventserver->get();
+
+$events = $response['data']; // events
+$links = $response['links']; // pagination links
+$meta = $response['meta']; // meta information
+```
+
+#### Basic Request with with options:
+
+The available options will be documented shortly.
+
+```php
+$eventserver = new Eventserver($token);
+$response = $eventserver
+    ->withOptions([
+        'include' => 'location,categories',
+        'page' => [
+            'size' => 10,
+            'number' => 1,
+        ],
+    ])
+    ->get();
 
 $events = $response['data']; // events
 $links = $response['links']; // pagination links
@@ -46,4 +67,4 @@ Towa is a digital agency based in Bregenz (Austria), Vienna (Austria) & St. Gall
 
 The MIT License (MIT). Please read the (LICENSE.md)[License File] for more information.
 
-[current_version]: https://github.com/towa-digital/eventserver-sdk/tree/v1.0.0
+[current_version]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.1.0
