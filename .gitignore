@@ -10,6 +10,7 @@
 !composer.lock
 !LICENSE
 !phpunit.xml.dist
+!phpunit-printer.yml
 !README.md
 
 # Library
