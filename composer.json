@@ -1,0 +1,37 @@
+{
+    "name": "towa/eventserver-sdk",
+    "description": "PHP SDK for the eventserver-api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SahinU88",
+            "email": "sahin.ucar@towa.at",
+            "homepage": "https://www.towa-digital.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2",
+        "codedungeon/phpunit-result-printer": "^0.19.10",
+        "nunomaduro/collision": "^2.0",
+        "oscarotero/env": "^1.1",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Towa\\Eventserver\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Towa\\Eventserver\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
