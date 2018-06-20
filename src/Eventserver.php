@@ -53,7 +53,7 @@ class Eventserver
                     'headers' => [
                         'Accept' => 'application/json',
                         'Authorization' => "Bearer $this->token",
-                    ]
+                    ],
                 ]
             )
             ->getBody()
