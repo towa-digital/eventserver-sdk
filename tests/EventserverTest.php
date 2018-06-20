@@ -31,4 +31,18 @@ class EventserverTest extends TestCase
 
         $this->assertNotEmpty($response['data']);
     }
+
+    /** @test */
+    public function it_can_get_events_with_options()
+    {
+        $response = $this->eventserver
+            ->withOptions([
+                'page' => [
+                    'size' => 1,
+                ],
+            ])
+            ->get();
+
+        $this->assertCount(1, $response['data']);
+    }
 }

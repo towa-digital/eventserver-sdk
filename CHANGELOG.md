@@ -1,5 +1,11 @@
 # Changelog
 
+## [unreleased]
+
+### Added
+
++ pragmatic way to include options for the `get`-request
+
 ## [v1.0.0] - 20.06.2018
 
 ### Added

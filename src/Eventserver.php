@@ -36,6 +36,17 @@ class Eventserver
         $this->token = $token;
     }
 
+    /**
+     * @param array $options
+     *
+     * @return $this
+     */
+    public function withOptions(array $options){
+        $this->options = $options;
+
+        return $this;
+    }
+
     public function get()
     {
         return $this->make_request();
