@@ -1,6 +1,6 @@
 # eventserver-sdk
 
-[![Version](https://img.shields.io/badge/version-unreleased-brightgreen.svg?style=ffor-the-badge)][current_version]
+[![Version](https://img.shields.io/badge/version-v1.0.0-brightgreen.svg?style=ffor-the-badge)][current_version]
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=ffor-the-badge)](LICENSE.md)
 
 Developer SDK for interacting with the Eventserver API
@@ -46,4 +46,4 @@ Towa is a digital agency based in Bregenz (Austria), Vienna (Austria) & St. Gall
 
 The MIT License (MIT). Please read the (LICENSE.md)[License File] for more information.
 
-[current_version]: https://github.com/towa-digital/eventserver-sdk/tree/develop
+[current_version]: https://github.com/towa-digital/eventserver-sdk/tree/v1.0.0
