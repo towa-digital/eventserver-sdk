@@ -1,12 +1,12 @@
 # Changelog
 
-## [unreleased]
+## [v1.1.0]
 
 ### Added
 
 + pragmatic way to include options for the `get`-request
 
-## [v1.0.0] - 20.06.2018
+## [v1.0.0]
 
 ### Added
 
@@ -19,5 +19,6 @@
 
 + gitignore
 
+[v1.1.0]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.1.0
 [v1.0.0]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.0.0
 [unreleased]: https://github.com/towa-digital/eventserver-sdk/tree/develop
