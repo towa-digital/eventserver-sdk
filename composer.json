@@ -17,7 +17,7 @@
     "require-dev": {
         "phpunit/phpunit": "^7.2",
         "codedungeon/phpunit-result-printer": "^0.19.10",
-        "nunomaduro/collision": "^2.0",
+        "nunomaduro/collision": "^2.0 || ^4.0",
         "oscarotero/env": "^1.1",
         "vlucas/phpdotenv": "^2.4"
     },
