@@ -41,6 +41,17 @@ $links = $response['links']; // pagination links
 $meta = $response['meta']; // meta information
 ```
 
+#### Request with non default endpoint:
+
+```php
+$eventserver = new Eventserver($token);
+$response = $eventserver
+    ->withEndpoint('categories')
+    ->get();
+
+$categories = $response['data'];
+```
+
 ## Changelog
 
 Please see the [Changelog](CHANGELOG.md) for more information.
