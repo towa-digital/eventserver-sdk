@@ -2,7 +2,6 @@
 
 namespace Towa\Eventserver;
 
-
 use Exception;
 use GuzzleHttp\Client;
 
@@ -45,7 +44,8 @@ class Eventserver
      *
      * @return $this
      */
-    public function withOptions(array $options){
+    public function withOptions(array $options)
+    {
         $this->options = $options;
 
         return $this;
@@ -56,7 +56,8 @@ class Eventserver
      *
      * @return $this
      */
-    public function withEndpoint(string $endpoint){
+    public function withEndpoint(string $endpoint)
+    {
         $this->endpoint = $endpoint;
 
         return $this;
@@ -77,7 +78,7 @@ class Eventserver
                 $this->build_enpoint_url($this->endpoint, $this->options),
                 [
                     'headers' => [
-                        'Accept' => 'application/json',
+                        'Accept'        => 'application/json',
                         'Authorization' => "Bearer $this->token",
                     ],
                 ]
@@ -89,7 +90,7 @@ class Eventserver
     }
 
     /**
-     * Build endpoint with given options
+     * Build endpoint with given options.
      *
      * @param $endpoint
      * @param array $options
