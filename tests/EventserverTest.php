@@ -45,4 +45,14 @@ class EventserverTest extends TestCase
 
         $this->assertCount(1, $response['data']);
     }
+
+    /** @test */
+    public function it_can_get_non_default_endpoint()
+    {
+        $response = $this->eventserver
+            ->withEndpoint('categories')
+            ->get();
+
+        $this->assertNotEmpty($response['data']);
+    }
 }
