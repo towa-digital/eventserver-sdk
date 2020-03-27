@@ -12,10 +12,10 @@ class EventserverTest extends TestCase
     /** @var \Towa\Eventserver\Eventserver */
     protected $eventserver;
 
-    public function setUp()
+    protected function setUp(): void
     {
         Env::init();
-        $dotenv = new Dotenv(\dirname(__DIR__, 1));
+        $dotenv = Dotenv::createImmutable(\dirname(__DIR__, 1));
         $dotenv->load();
         $dotenv->required('EVENTSERVER_TOKEN');
 
