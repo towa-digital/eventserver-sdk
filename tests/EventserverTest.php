@@ -12,10 +12,10 @@ class EventserverTest extends TestCase
     /** @var \Towa\Eventserver\Eventserver */
     protected $eventserver;
 
-    public function setUp()
+    protected function setUp(): void
     {
         Env::init();
-        $dotenv = new Dotenv(\dirname(__DIR__, 1));
+        $dotenv = Dotenv::createImmutable(\dirname(__DIR__, 1));
         $dotenv->load();
         $dotenv->required('EVENTSERVER_TOKEN');
 
@@ -44,5 +44,15 @@ class EventserverTest extends TestCase
             ->get();
 
         $this->assertCount(1, $response['data']);
+    }
+
+    /** @test */
+    public function it_can_get_non_default_endpoint()
+    {
+        $response = $this->eventserver
+            ->withEndpoint('categories')
+            ->get();
+
+        $this->assertNotEmpty($response['data']);
     }
 }

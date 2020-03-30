@@ -1,5 +1,11 @@
 # Changelog
 
+## [unreleased]
+
+### Added
+
++ Eventserver `withEndpoint` method
+
 ## [v1.1.0]
 
 ### Added

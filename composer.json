@@ -15,11 +15,11 @@
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.2",
-        "codedungeon/phpunit-result-printer": "^0.19.10",
-        "nunomaduro/collision": "^2.0",
+        "phpunit/phpunit": "^9.0.0",
+        "codedungeon/phpunit-result-printer": "^0.27.0",
+        "nunomaduro/collision": "^4.1.3",
         "oscarotero/env": "^1.1",
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^4.1"
     },
     "autoload": {
         "psr-4": {
