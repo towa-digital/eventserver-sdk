@@ -1,6 +1,6 @@
 # eventserver-sdk
 
-[![Version](https://img.shields.io/badge/version-v1.0.0-brightgreen.svg?style=ffor-the-badge)][current_version]
+[![Version](https://img.shields.io/badge/version-v1.2.0-brightgreen.svg?style=ffor-the-badge)][current_version]
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=ffor-the-badge)](LICENSE.md)
 
 Developer SDK for interacting with the Eventserver API
@@ -9,10 +9,11 @@ Developer SDK for interacting with the Eventserver API
 
 ### Events
 
-#### Basic Request with no options:
+#### Basic Request with no options
 
 ```php
 $eventserver = new Eventserver($token);
+
 $response = $eventserver->get();
 
 $events = $response['data']; // events
@@ -20,12 +21,13 @@ $links = $response['links']; // pagination links
 $meta = $response['meta']; // meta information
 ```
 
-#### Basic Request with with options:
+#### Basic Request with with options
 
 The available options will be documented shortly.
 
 ```php
 $eventserver = new Eventserver($token);
+
 $response = $eventserver
     ->withOptions([
         'include' => 'location,categories',
@@ -41,6 +43,18 @@ $links = $response['links']; // pagination links
 $meta = $response['meta']; // meta information
 ```
 
+#### Request with non default endpoint
+
+```php
+$eventserver = new Eventserver($token);
+
+$response = $eventserver
+    ->withEndpoint('categories')
+    ->get();
+
+$categories = $response['data'];
+```
+
 ## Changelog
 
 Please see the [Changelog](CHANGELOG.md) for more information.
@@ -48,16 +62,17 @@ Please see the [Changelog](CHANGELOG.md) for more information.
 ## Testing
 
 ```bash
-$ composer test
+▲ composer test
 ```
 
-### Requirements:
+### Requirements
 
 + `.env`-file in the root with a valid `EVENTSERVER_TOKEN` token
 
 ## Credits
 
 + [SahinU88](https://github.com/SahinU88)
++ [Smokey](https://github.com/simonrauch)
 
 ## About Towa
 
@@ -67,4 +82,4 @@ Towa is a digital agency based in Bregenz (Austria), Vienna (Austria) & St. Gall
 
 The MIT License (MIT). Please read the (LICENSE.md)[License File] for more information.
 
-[current_version]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.1.0
+[current_version]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.2.0

@@ -9,17 +9,21 @@
             "email": "sahin.ucar@towa.at",
             "homepage": "https://www.towa-digital.com/",
             "role": "Developer"
+        },
+        {
+            "name": "Smokey",
+            "email": "simon.rauch@towa.at",
+            "role": "Developer"
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.2",
-        "codedungeon/phpunit-result-printer": "^0.19.10",
-        "nunomaduro/collision": "^2.0",
-        "oscarotero/env": "^1.1",
-        "vlucas/phpdotenv": "^2.4"
+        "nunomaduro/collision": "^4.1.3",
+        "phpunit/phpunit": "^9.0.0",
+        "oscarotero/env": "^1.1.0",
+        "vlucas/phpdotenv": "^4.1.0"
     },
     "autoload": {
         "psr-4": {
