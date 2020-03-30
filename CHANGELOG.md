@@ -1,18 +1,18 @@
 # Changelog
 
-## [unreleased]
+## [v1.2.0] - 30.03.2020
 
 ### Added
 
 + Eventserver `withEndpoint` method
 
-## [v1.1.0]
+## [v1.1.0] - 20.06.2018
 
 ### Added
 
 + pragmatic way to include options for the `get`-request
 
-## [v1.0.0]
+## [v1.0.0] - 20.06.2018
 
 ### Added
 
@@ -25,6 +25,7 @@
 
 + gitignore
 
+[v1.2.0]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.2.0
 [v1.1.0]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.1.0
 [v1.0.0]: https://github.com/towa-digital/eventserver-sdk/releases/tag/v1.0.0
 [unreleased]: https://github.com/towa-digital/eventserver-sdk/tree/develop
