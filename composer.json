@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.3.0"
+        "guzzlehttp/guzzle": "^6.3.0 || ^7.0.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^4.1.3",
